@@ -116,8 +116,7 @@ def main():
 
     # get and print data
     values, title_values = get_data(SPREADSHEET_ID, TITLE_ROW, RANGE_NAME)
-    print(args.search_string[0])
-    matches = search_for_string(values, args.search_string[0])
+    matches = search_for_string(values, args.search_string)
     print_title_row(title_values)
     print_data(matches)
 
